@@ -35,6 +35,7 @@ describe('js-edu', () => {
     
             expect(weeks).to.equal(200);
         });
+        
         it('should could take 80 weeks for friends focus', () => {
             const weeks = getTimeForEducation('friends', true,  defaultStudentSpeedConfig);
     
@@ -45,6 +46,7 @@ describe('js-edu', () => {
     
             expect(weeks).to.equal(40);
         });
+        
         it('should could take 27 weeks for profession focus', () => {
             const weeks = getTimeForEducation('profession', true,  defaultStudentSpeedConfig);
     
@@ -61,6 +63,7 @@ describe('js-edu', () => {
             expect(weeks).to.equal(14);
         });
     });
+   
     describe('for problem student with programming skills', () => {
         const studentConfig = problemStudentSpeedConfig;
         it('should could take a lot of weeks for family focus', () => {
